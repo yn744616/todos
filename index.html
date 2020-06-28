@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Todos</title>
+</head>
+<body>
+    <div class="container pt-4 d-flex flex-column justify-content-center">
+        <h1 class="display-4 text-center py-3">Todos</h1>
+
+        <!--Search todos-->
+        <form class="search py-2 text-center">
+            <input id="searchInput" class="w-100 form-control m-auto" type="text" placeholder="Search todos">
+        </form>
+
+        <!--Todo list-->
+        <ul class="todo list-group pt-2">
+            <li class="list-group-item">
+                <span>Get more whtie paint</span>
+                <i class="delete fas fa-trash-alt float-right"></i>
+            </li>
+            <li class="list-group-item">
+                <span>Mop floor</span>
+                <i class="delete fas fa-trash-alt float-right"></i>
+            </li>
+        </ul>
+
+        <!--Add new todos-->
+        <h3 class="py-4 text-center">Add Todos</h3>
+        <form class="add">
+            <input class="w-100 form-control m-auto inputField" type="text" placeholder="Add todos" id="addInput">
+        </form>
+    </div>
+    
+    <script src="js/todos.js"></script>
+</body>
+</html>
